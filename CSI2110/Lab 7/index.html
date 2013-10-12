@@ -1,0 +1,49 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <title>Lab 7</title>
+</head>
+<body>
+<p>
+<h1>Lab 7</h1>
+<hr>
+<h2>Hashing Functions</h2>
+<p>
+In this laboratory, you will be able to explore the distribution of
+hashed keys in a hash table. The class <tt>HashFunctionAnalysis</tt>
+creates a hash table of a specified size and it counts how many keys
+will hash to each index for a specific data-set. The behaviour of the
+hash function can be analyzed by printing a histogram of the
+distrubtion of the hashed keys in the table. The keys in this example
+are strings and hash functions can be tested on any text stored as a
+textfile.
+</p>
+
+<p>
+Study and run the code in the <tt>TestHashFunc.java</tt>. You will
+have to provide the filename of a textfile at the command prompt. The
+implemented hash function is very simple: It takes the first 8 bytes of
+the ASCII code of each word as the key and truncates it from the left
+after ceil(log(N)) bits. It interpretes these bits than as the integer
+index for the hash table. If you test the code with "alphabet.txt"
+with a hash table size of 256, you can notice that each key maps to
+a different index.
+</p>
+ 
+<p>
+<em> Please implement a better hashing function. </em> 
+</p>
+
+<p>
+Notice how the abstract class <tt>HashFunctionAnalysis</tt> needs to
+be extended defining the abstract method <tt>int hashFunction( String
+word )</tt>. Notice also that defining <tt>TestHashFunc.DEBUG</tt>
+as <tt>true</tt> or <tt>false</tt> will create more or less verbose
+output, respectively.
+
+</p>
+
+
+</body>
+</html>

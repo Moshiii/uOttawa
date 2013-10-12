@@ -1,0 +1,38 @@
+testData(
+    s/[
+        np/[
+        det/[
+            word(a)/[]],
+        n(singular)/[
+            word(man)/[]],
+        sbar/[
+            comp/[
+            np(A)/[
+                n(singular)/[
+                word(who)/[]]]],
+            s/[
+            np/[
+                det/[
+                word(a)/[]],
+                n(singular)/[
+                word(woman)/[]],
+                sbar([])/[]],
+            vp/[
+                v(singular)/[
+                word(like)/[]],
+                np/[
+                np_trace(A)/[]]],
+            adjunct/[]]]],
+        vp/[
+        v(singular)/[
+            word(read)/[]],
+        np/[
+            det/[
+            word(a)/[]],
+            n(singular)/[
+            word(book)/[]],
+            sbar([])/[]]],
+        adjunct/[]]
+).
+
+% testData(T), prettyPrintGeneralTree(T, '   ').

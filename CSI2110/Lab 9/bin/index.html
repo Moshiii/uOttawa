@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title>Lab 9</title>
+</head>
+<p>
+<h1>Lab 9</h1>
+</p>
+
+<h2>Adjacency List Implementation of a Graph and DFS </h2>
+<p>
+Download the archive <tt>Lab9.zip</tt> and extract the
+<tt>SimpleGraph</tt> application. The application reads an edge-list
+from a file and constructs a Graph. The Graph is stored as
+<tt>AdjacencyListGraph</tt>. The application simple prints all the
+vertices followed by all the edges. The archives also contain two
+graph files which you can use as input for the application:
+  <ul>
+    <li><tt>graph.txt</tt></li>
+    <li><tt>graph2.txt</tt></li>
+  </ul>
+</p>
+
+
+<h2>New Graph</h2>
+<p>
+Define a new graph in a textfile and print it with the application.
+</p>
+
+
+<h2>Study the Goodrich et al. Implementation</h2>
+<p>
+Study the <tt>AdjacencyListGraph</tt> implementation of the
+<tt>Graph</tt> ADT by Goodrich et al. Keep in mind the structure
+discussed in class. Notice that the adjacency lists are implemented in
+the inner class <tt>MyVertex</tt> and the references from the edges in
+the inner class <tt>MyEdge</tt>. The <tt>Graph</tt> ADT does not
+define any traversal method. The traversal of graphs is implemented
+with a separate class <tt>DFS</tt>. These classes are all part of the
+net.datastructures package which is contained (as far as required) in
+the zip archive for this lab.
+</p>
+
+
+<h2>Printing with Generic DFS</h2>
+<p>
+The program <tt>SimpleGraph</tt> has a routine <tt>void printDFS(
+String vert )</tt> which currently does nothing. Please implement this
+routine by sub-classing <tt>DFS</tt>. An anonymous inner class would
+be appropriate. The routine should print the vertices as they are
+visited by the traversal: once when they are first visited and a
+second time when a vertex is finished.
+</p>
+
+ 
+</body>
+
+</html>
